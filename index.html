@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Trello</title>
+</head>
+<body>
+    <div class="main">
+      <!-- parant div of all board  -->
+
+      <div class="board-container">
+
+        <!-- here is todo task container  -->
+
+            <div class="board" id="todo-board">
+                <h1>Todo Tasks</h1><hr>
+                <div class="todo-task-list"></div>
+                <input class="input" type="text">
+                <button class="btn" onclick="AddTask()">Add Task</button>
+            </div>
+
+         <!-- here is progress task container  -->
+
+         <div class="board" id="progress-board">
+            <h1>Progress Tasks</h1><hr>
+            <div class="progress-task-list"></div>
+            <input class="input" type="text">
+            <button class="btn" onclick={AddTask(progress-board)}>Add Task</button>
+        </div>    
+
+
+         <!-- here is Done task container  -->
+
+         <div class="board" id="done-board">
+            <h1>Done Tasks</h1><hr>
+            <div class="done-task-list"></div>
+            <input class="input" type="text">
+            <button class="btn" onclick={AddTask(done-board)}>Add Task</button>
+        </div>
+
+      </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
