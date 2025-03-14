@@ -14,31 +14,31 @@
 
         <!-- here is todo task container  -->
 
-            <div class="board" id="todo-board">
+            <div class="board" id="todo">
                 <h1>Todo Tasks</h1><hr>
                 <div class="todo-task-list"></div>
-                <input class="input" type="text">
-                <button class="btn" onclick="AddTask()">Add Task</button>
+                <input class="input" type="text" id="todo-input">
+                <button class="btn" onclick="addTask('todo')">Add Task</button>
             </div>
 
          <!-- here is progress task container  -->
 
-         <div class="board" id="progress-board">
+         <div class="board" id="progress">
             <h1>Progress Tasks</h1><hr>
-            <div class="progress-task-list"></div>
-            <input class="input" type="text">
-            <button class="btn" onclick={AddTask(progress-board)}>Add Task</button>
+            <div id="task-list"></div>
+            <input class="input" type="text" id="progress-input">
+            <button class="btn" onclick="addTask('progress')">Add Task</button>
         </div>    
 
 
          <!-- here is Done task container  -->
 
-         <div class="board" id="done-board">
+         <div class="board" id="done">
             <h1>Done Tasks</h1><hr>
             <div class="done-task-list"></div>
-            <input class="input" type="text">
-            <button class="btn" onclick={AddTask(done-board)}>Add Task</button>
-        </div>
+            <input class="input" type="text" id="done-input">
+            <button class="btn" onclick="addTask('done')">Add Task</button>
+        </div> 
 
       </div>
 
@@ -48,3 +48,27 @@
     
 </body>
 </html>
+
+<!-- 
+
+<div class="board" id="todo">
+    <h1>Todo Tasks</h1><hr>
+    <div class="todo-task-list"></div>
+    <input class="input" type="text" id="todo-input">
+    <button class="btn" onclick="addTask('todo')">Add Task</button>
+</div>
+
+
+
+<div class="column" id="todo">
+    <h2>To Do (<span id="todo-count">0</span>)</h2>
+    <div class="tasks" id="todo-tasks"></div>
+    <input
+      type="text"
+      class="task-input"
+      id="todo-input"
+      placeholder="Add a task"
+    />
+    <button class="add-task" onclick="addTask('todo')">Add Task</button>
+  </div> -->
+
